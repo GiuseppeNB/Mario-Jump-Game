@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="game-board">
+
+    <div class="score-board">
+        <div>Pontução: <span id="score">0</span></div>
+        <div>Tempo: <span id="timer">0</span></div>
+
+    </div>
+   
+    <div class="game-over" id="gameOver"> 
+        <h1>Game Over</h1>
+        <p>Pontução total: <span id="finalScore">0</span></p>
+        <p>Tempo total: <span id="finalTime">0</span></p>
+        <button onclick="start()">Jogar Novamente</button>
+
+    </div>
+
+     <img src="https://raw.githubusercontent.com/manuel-dve/mario-jump/main/images/clouds.png" class="clouds" alt="Nuvens">
+    <img src="https://raw.githubusercontent.com/manuel-dve/mario-jump/main/images/mario.gif" class="mario" alt="Mario">
+    <img src="https://raw.githubusercontent.com/manuel-dve/mario-jump/main/images/pipe.png" class="pipe" alt="Cano">
+
+    </div>
+
+
+    <script src="script.js" defer></script>
+</body>
+</html>
