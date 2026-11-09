@@ -13,6 +13,13 @@
   background: linear-gradient(#87CEEB, #E0F6FF);
 }
 
+/* Pixel art nítida */
+.mario,
+.pipe,
+.clouds {
+  image-rendering: pixelated;
+}
+
 .game-board.is-idle .pipe,
 .game-board.is-idle .clouds {
   animation-play-state: paused;
@@ -105,13 +112,13 @@
   animation: jump-animation 500ms ease-out;
 }
 
- @keyframes jump-animation {
+@keyframes jump-animation {
   0% {
     bottom: 0px;
   }
   40% {
     bottom: 180px;
-  } 
+  }
   50% {
     bottom: 180px;
   }
@@ -179,6 +186,12 @@
   margin-bottom: 10px;
 }
 
+.new-record {
+  margin-top: 8px;
+  color: #ffd700;
+  font-weight: bold;
+}
+
 .game-over button {
   margin-top: 15px;
   padding: 10px 20px;
@@ -202,5 +215,12 @@
 
   .start-modal h1 {
     font-size: 24px;
+  }
+}
+
+/* Respeita quem prefere menos animação (apenas o fundo) */
+@media (prefers-reduced-motion: reduce) {
+  .clouds {
+    animation: none;
   }
 }
